@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kafka test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/application.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>消息订阅发布测试</h1>
+        <hr />
+        <p>Client UUID: rogerluo</p>
+        <p>Kafka topic: rogerluo</p>
+      </div>
+      <form id="input-form" class="form-inline">
+        <div class="form-group">
+          <input id="input-send-topic" type="text" class="form-control" placeholder="输入发送topic" autofocus />
+        </div>
+        <div class="form-group">
+          <input id="input-text" type="text" class="form-control" placeholder="输入消息" autofocus />
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+      <div class="page-header">
+        <h1>消息列表</h1>
+      </div>
+      <div id="chat-text">
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/reconnecting-websocket.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+  </body>
+</html>
